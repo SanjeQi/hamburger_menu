@@ -70,3 +70,34 @@ body {
 .btn:hover {
   background-color: rgba(155, 110, 28, 0.9);
 }
+.showcase-container h1 {
+  transform: translateY(-2000px);
+  animation: title 1s forwards ease-in;
+}
+
+.showcase-container p {
+  transform: translateX(-2000px);
+  animation: paragraph 1s forwards ease-in;
+}
+
+.showcase-container .btn {
+  transform: translateX(2000px);
+  animation: btn 1s forwards ease-in;
+}
+
+@keyframes title {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes paragraph {
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes btn {
+  to {
+    transform: translateX(0);
+  }
+}
